@@ -13,7 +13,7 @@ const Category = () => {
        
        setWord(myParam)
 console.log('hello from use',word)
-    fetch("http://localhost:8000/all",{
+    fetch("/all",{
         method:'POST',
         headers:{
             "Content-type":"application/json"

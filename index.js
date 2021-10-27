@@ -9,7 +9,7 @@ const axios = require('axios');
 app.use(express.json());
 
 const corsOptions = {
-  origin: '*',
+ 
   credentials: true,
   optionSuccessStatus: 200,
 }
