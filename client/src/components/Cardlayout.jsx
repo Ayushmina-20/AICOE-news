@@ -13,7 +13,7 @@ const Cardlayout=({users})=>{
      
 <Row className="justify-content-md-center w-100">
 <Col xs={12} md={8}>
-{users.map((cur)=>{
+{users && users.map((cur,id)=>{
      const str=cur.content
     
       
@@ -21,7 +21,7 @@ const Cardlayout=({users})=>{
        return(
            <>
 
-<Card  style={{ marginLeft:'22px', marginTop:'20px' }}>
+<Card key={id} style={{ marginLeft:'22px', marginTop:'20px' }}>
     <Row >
     <Col md={3}>
   <Card.Img  className="mt-4"

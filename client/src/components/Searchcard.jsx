@@ -7,7 +7,7 @@ const Searchcard=({users})=>{
        
   <Row className="justify-content-md-center w-100">
   <Col xs={12} md={8}>
-     {users.map((cur)=>{
+     {users && users.map((cur,id)=>{
  
 
 
@@ -17,7 +17,7 @@ console.log(cur);
          return(
              <>
   
-  <Card  style={{ marginLeft:'22px', marginTop:'100px' }}>
+  <Card key={id} style={{ marginLeft:'22px', marginTop:'100px' }}>
       <Row >
       <Col md={3}>
     <Card.Img  className="mt-4"

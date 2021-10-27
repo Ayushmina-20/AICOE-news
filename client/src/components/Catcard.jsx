@@ -12,7 +12,7 @@ const Catcard=({users})=>{
      
 <Row className="justify-content-md-center w-100">
 <Col xs={12} md={8}>
-{users.map((cur)=>{
+{users && users.map((cur,id)=>{
      const str=cur.news_article
     
       
@@ -20,7 +20,7 @@ const Catcard=({users})=>{
        return(
            <>
 
-<Card  style={{ marginLeft:'22px', marginTop:'65px' }}>
+<Card key={id} style={{ marginLeft:'22px', marginTop:'65px' }}>
     <Row >
     {/* <Col md={3}>
   <Card.Img  className="mt-4"
