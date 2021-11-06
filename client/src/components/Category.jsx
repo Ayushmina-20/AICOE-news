@@ -35,7 +35,7 @@ console.log('hello from use',word)
 
 
     })
-    .catch(err=>alert('something went wrong with server')
+    .catch(err=>console.log('something went wrong with server')
     )},[word])
     
 

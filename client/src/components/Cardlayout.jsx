@@ -33,8 +33,8 @@ const Cardlayout=({users})=>{
     <Card.Title >{cur.content}</Card.Title>
     <Card.Text>
     
-  <p>{str.length>100 ? str.substr(0,101) : str.substr(0)}....</p>
-  { str.length>100?<>
+  <p>{str && str.length>100 ? str && str.substr(0,101) : str && str.substr(0)}....</p>
+  {str &&  str.length>100?<>
   <a style={{
   color: "blueviolet",cursor: "pointer",
 }} className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h6>{linkName}</h6></a>
